@@ -5,6 +5,8 @@
 
 # Dependencies
 
+import pymongo
+from pymongo import MongoClient
 import pandas as pd
 import time
 import requests
@@ -114,31 +116,20 @@ def scrape():
         'Characteristics': mars_html,
         'Images': mars_images
     }
-    return (summary_data)
+#    return (summary_data)
 
-# Step 2 - MongoDB and Flask Application
+import pymongo
+from pymongo import MongoClient
 
-# Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
+# Initialize PyMongo to work with MongoDBs
+conn = 'mongodb://localhost:27017'
+client = pymongo.MongoClient(conn)
 
-# * Start by converting your Jupyter notebook into a Python script called `scrape_mars.py` with a
-#   function called `scrape` that will execute all of your scraping code from above and return
-#   one Python dictionary containing all of the scraped data.
+# Define database and collection
+db = client.mars_db
+collection = db.summary_data
 
-# * Next, create a route called `/scrape` that will import your `scrape_mars.py` script and call
-#   your `scrape` function.
-
-# * Store the return value in Mongo as a Python dictionary.
-
-# * Create a root route `/` that will query your Mongo database and pass the mars data into an
-#  HTML template to display the data.
-
-# * Create a template HTML file called `index.html` that will take the mars data dictionary and
-#   display all of the data in the appropriate HTML elements. Use the following as a guide for
-#   what the final product should look like, but feel free to create your own design.
-
-# Hints
-
-# Use Pymongo for CRUD applications for your database. For this homework, you can simply
-#   overwrite the existing document each time the `/scrape` url is visited and new data is obtained.
-
+mars_data = db.summary_data.find()
+for data in mars_data:
+    print(data)
 
