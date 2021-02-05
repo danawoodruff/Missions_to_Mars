@@ -116,7 +116,7 @@ def scrape():
         'Characteristics': mars_html,
         'Images': mars_images
     }
-#    return (summary_data)
+    return (summary_data)
 
 import pymongo
 from pymongo import MongoClient
@@ -126,10 +126,9 @@ conn = 'mongodb://localhost:27017'
 client = pymongo.MongoClient(conn)
 
 # Define database and collection
-db = client.mars_db
-collection = db.summary_data
+mars_db = client.mars_db
+collection = mars_db.summary_data
 
-mars_data = db.summary_data.find()
+mars_data = mars_db.summary_data.find()
 for data in mars_data:
     print(data)
-
