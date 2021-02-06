@@ -101,7 +101,7 @@ def scrape():
         # Storage Dictionary
         image_dict = {}
         image_dict['Title'] = title
-        image_dict['Image URL'] = image_url
+        image_dict['ImageURL'] = image_url
 
         # Add data to empty list "mars_images"
         mars_images.append(image_dict)
@@ -120,7 +120,6 @@ def scrape():
 
 import pymongo
 from pymongo import MongoClient
-
 # Initialize PyMongo to work with MongoDBs
 conn = 'mongodb://localhost:27017'
 client = pymongo.MongoClient(conn)

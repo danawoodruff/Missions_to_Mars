@@ -23,7 +23,7 @@ def scrape_data():
 def index():
     mars_db = client.mars_db
     data = mars_db.summary_data.find_one()
-    print(data)
+    # print(data)
     return render_template("index.html", data=data, current_time=datetime.utcnow())
 
 
