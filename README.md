@@ -1,5 +1,5 @@
 # Mission to Mars
-![Header]('https://wallpapercave.com/wp/wp2461878.jpg')
+![Header]("static/images/header.png")
 <br>            
 Project begins with initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.<br>
 <br>
