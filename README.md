@@ -1,5 +1,5 @@
 # Mission to Mars
-![Header]("static/images/header.png")
+![Header]("static/images/header")
 <br>            
 Project begins with initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.<br>
 <br>
