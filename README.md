@@ -1,9 +1,11 @@
-# Web-scraping-challenge
+# Mission to Mars
+<!-- Add Jumbotron to Header -->
+        <div class="jumbotron text-center"
+            style="background-image: url('https://wallpapercave.com/wp/wp2461878.jpg'); background-position: center; background-size: cover;height: 250px;">
+            <h1 style="color:white">Mission to Mars</h1></div>
 Project begins with initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.<br>
 <br>
-1. The Jupyter Notebook containing the scraping code used.  <br>
-2. Screenshots of your final application.  <br>
-<br>
-## Hints  * Use Splinter to navigate the sites when needed and BeautifulSoup to help find and parse out the necessary data.  <br>
-* Use Pymongo for CRUD applications for your database. Overwrite the existing document each time the `/scrape` url is visited and new data is obtained.  <br>
-* Use Bootstrap to structure your HTML template.<br>
+1. The Jupyter Notebook contains the scraping code and the dictionary of information is saved as a Mongo database. <br>
+2. The Jupyter Notebook is then converted to a python file for use in a Flask app.  
+3. The Flask app has two routes- one for scraping new data from NASA and the other to redirect to the HTML home page code.
+
