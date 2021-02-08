@@ -127,8 +127,8 @@ client = pymongo.MongoClient(conn)
 # Define database and collection
 mars_db = client.mars_db
 collection = mars_db.summary_data
-collection.insert_one(summary_data)
+#collection.insert_one(summary_data)
 
 mars_data = mars_db.summary_data.find()
 for data in mars_data:
-#    print(data)
+    print(data)
