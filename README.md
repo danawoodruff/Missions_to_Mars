@@ -12,4 +12,4 @@ Project begins with initial scraping using Jupyter Notebook, BeautifulSoup, Pand
 The code is run as a Python file. 
 <p align="center"><img width="993" height="1099" src="images/page_screenshot.PNG"></p>
 <br>
-<p align="center"><img width="100%" height="128" src="images/footer.PNG"></p>
+<p align="center"><img width="100%" height="128" src="images/footer.png"></p>
