@@ -1,11 +1,9 @@
 <p align="center"><img width="100%" height="144" src="images/readme.PNG"></p>
 <br>            
 Project begins with initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter from public websites:<br>
-<ul>
-    <li> https://space-facts.com/mars<li>
-    <li> https://mars.nasa.gov/news<li>
-    <li> https://astrogeology.usgs.gov<li>
-</ul>
+- https://space-facts.com/mars<br>
+- https://mars.nasa.gov/news<br>
+- https://astrogeology.usgs.gov<br>
 <br>
 1. The Jupyter Notebook contains the scraping code and the dictionary of information is saved as a Mongo database. <br>
 2. The Jupyter Notebook is then converted to a python file for use in a Flask app.<br>
