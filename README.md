@@ -9,7 +9,8 @@ Project begins with initial scraping using Jupyter Notebook, BeautifulSoup, Pand
 2. The Jupyter Notebook is then converted to a python file for use in a Flask app.<br>
 3. The Flask app has two routes- one for scraping new data from NASA and the other to redirect to the HTML home page code.<br>
 <br>
-The code is run as a Python file. 
-<p align="center"><img width="586" height="1109" src="images/page_screenshot.PNG"></p>
+The code is run as a Python file with this result: 
+<p align="center"><img style="border:5px double black;" src="images/page_screenshot.PNG" width="586" height="1109"></p>
 <br>
 <p align="center"><img width="100%" height="128" src="images/footer.png"></p>
+
