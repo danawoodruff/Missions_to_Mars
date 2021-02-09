@@ -1,4 +1,4 @@
-![Header]("images/readme.PNG")
+<p align="center"><img width="100%" height="144" src="images/readme.PNG"></p>
 <br>            
 Project begins with initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter from public websites:<br>
   - https://space-facts.com/mars/
@@ -10,4 +10,6 @@ Project begins with initial scraping using Jupyter Notebook, BeautifulSoup, Pand
 3. The Flask app has two routes- one for scraping new data from NASA and the other to redirect to the HTML home page code.<br>
 <br>
 The code is run as a Python file. 
-
+<p align="center"><img width="993" height="1099" src="images/page_screenshot.PNG"></p>
+<br>
+<p align="center"><img width="100%" height="128" src="images/footer.PNG"></p>
